@@ -1,0 +1,263 @@
+qw<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce - Inicio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        /* Estilos de la sección hero */
+        .hero {
+            /* background-image: */
+            /* <a href="https://wwww.Users/edith/primerapaginaweb/00 Archivos Adjuntos Proyecto Final Frontend Fundamentals-Inicio/principal.jpg">Conoce nuestros productos</a>  */
+            /* <img src="https://www.primerapaginaweb/00 Archivos Adjuntos Proyecto Final Frontend Fundamentals-Inicio/principal.jpg">Conoce nuestros productos</a>  */
+            /* background-size: cover;   Cubre completamente el area del elemento */ 
+            background-color: #a9a9a9; 
+            color: white;
+            text-align: center;
+            padding: 100px; /* Ajustar el espaciado segun sea necesario */
+        }
+        /* Estilos de las columnas */
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        .column {
+            width: 48%; /* Ajustar el ancho segun sea necesario */
+            box-sizing: border-box;
+            padding: 10px;  /* Ajusta el ancho al 100% */
+            border: 1px solid #ccc; /* Añade un borde para mayor claridad */
+        }
+        /* Agrega color a las primeras y segundas columnas, excepto a la primera fila y las que contienen imagenes */
+        .column:not(:first-child):not(:has(img)),
+        .column:first-child:not(:has(img)) {
+            background-color: #4065e0;
+            text-align: center; /* Alinea el contenido al centro */
+        }
+        /* Define color blanco para algunos parrafos y algunos H3. */
+        .color-blanco {
+            color: #ffffff;
+        }
+        /* Estilos para el boton "Agregar al carrito" */
+        .add-to-cart-button {
+            display: block;
+            margin: 10px auto; /* ajusta el margen sup. e inf. y centra horizontalmente. */
+            padding: 10px 20px; /* ajusta el relleno segun sea necesario. */
+            font-size: 16px;
+            background-color: #03c02f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        /* Reglas de estilo para las filas de tres columnas */
+        .row-three-columns {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .column-three-columns {
+            width: 30%;
+            box-sizing: border-box;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        /* agraga color a las primeras, segundas y terceras columnas, excepto la primera fila y las que contienen imagen. */
+        .column-three-columns:not(:first-child):not(:has(img)),
+        .column-three-columns:first-child:not(:has(img)) {
+            background-color:  #4065e0;
+        }
+        /* Reglas de estilo para el footer  */
+        footer {
+            display: flex;
+            justify-content: space-between;
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        /* Reglas de estilo para cada columna del footer */
+        .footer-column {
+            width: 30%;
+            box-sizing: border-box;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        /* Estilos para los enlaces del menu de navegación. */
+        .footer-column nav a {
+            color: black;  /*color de texto negro */
+            text-decoration: none;  /* Sin decoración dev enlace */
+            display:block;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Titulo de mi tienda -->
+        <h1 style="text-align:center;">Mi tienda de <span style="color: #037bc0;"> Muebles</span></h1>
+    </header>
+    <!-- Menú de navegación -->
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#Nosotros">nosotros</a>
+        <a href="#tienda">Tienda</a>
+        <a href="#blog">Blog</a>
+        <a href="#galería">Galería</a>
+        <a href="#contacto">contacto</a>
+    </nav>
+    <!-- Sección Hero -->
+    <div class="hero">
+        <h1>Imagen hero</h1>
+        <!-- <a href="mi_pagina_destinoc.html" class="cta_button"></a> -->
+    </div>
+    <!-- Sección productos -->
+    <div>
+        <h2 style="text-align:center;">Nuevos Productos</h2>
+    </div>
+   
+     <!-- se inserta primera fila con dos columnas --> 
+     <div class="row">
+        <!-- Columna 1-->
+        <div class="column">
+            <img src="/Users/edith/primerapaginaweb/00 Archivos Adjuntos Proyecto Final Frontend Fundamentals-Inicio/producto1.jpg">
+            <p style="text-align: center;"><b>Imagen del producto 1</b></p>
+        </div>
+        <!-- Columna 2  ;con boton "agregar al carrito" -->
+        <div class="column">
+            <h3 class="color-blanco">Recamara Juvenil</h3>
+            <p class="color-blanco">Recamara individual con base de madera, incluye esctitorio, silla y librero con etrepaños.<br>Su precio es de $20000</p>
+            <button class="add-to-cart-button">Agregar al carrito</button>
+        </div>
+    </div>
+     <!-- se inserta segunda fila con dos columnas, para imagenes de los productos 2 y 3--> 
+     <div class="row">
+        <!-- Columna 1-->
+        <div class="column">
+            <img src="/Users/edith/primerapaginaweb/00 Archivos Adjuntos Proyecto Final Frontend Fundamentals-Inicio/producto2.jpg">
+            <p style="text-align: center;"><b>Imagen del producto 2</b></p>
+        </div>
+        <!-- Columna 2 -->
+        <div class="column">
+            <img src="/Users/edith/primerapaginaweb/00 Archivos Adjuntos Proyecto Final Frontend Fundamentals-Inicio/producto3.jpg">
+            <p style="text-align: center;"><b>Imagen del producto 3</b></p>
+        </div>
+    </div>
+     <!-- se inserta segunda fila con dos columnas para descripción de los productos  2 y 3.--> 
+     <div class="row">
+        <!-- Columna 1-->
+        <div class="column">
+            <h3 class="color-blanco">Cuadro decorativo</h3>
+            <p class="color-blanco">Cuadro decorativo Minimalista con figuras geométricas.<br>Su precio es de $10,000</p>
+            <button class="add-to-cart-button">Agregar al carrito</button>
+        </div>
+        <!-- Columna 2  ;con boton "agregar al carrito" -->
+        <div class="column">
+            <h3 class="color-blanco">Recamara King Zize</h3>
+            <p class="color-blanco">Recamara king Zize con base de madera.<br>Su precio es de $25,000</p>
+            <button class="add-to-cart-button">Agregar al carrito</button>
+        </div>
+    </div>
+    <!-- se inserta tercera fila con tres columnas, para imagenes de los productos 4, 5 y 6--> 
+    <div class="row">
+        <!-- Columna 1-->
+        <div class="column">
+            <img src="/Users/edith/primerapaginaweb/00 Archivos Adjuntos Proyecto Final Frontend Fundamentals-Inicio/producto4.jpg">
+            <p style="text-align: center;"><b>Imagen del producto 4</b></p>
+        </div>
+        <!-- Columna 2 -->
+        <div class="column">
+            <img src="/Users/edith/primerapaginaweb/00 Archivos Adjuntos Proyecto Final Frontend Fundamentals-Inicio/producto5.jpg">
+            <p style="text-align: center;"><b>Imagen del producto 5</b></p>
+        </div>
+         <!-- Columna 3 -->
+         <div class="column">
+            <img src="/Users/edith/primerapaginaweb/00 Archivos Adjuntos Proyecto Final Frontend Fundamentals-Inicio/producto6.jpg">
+            <p style="text-align: center;"><b>Imagen del producto 6</b></p>
+        </div>
+    </div>
+     <!-- se inserta tercera fila con tres columnas para descripción de los productos  4, 5 y 6.--> 
+     <div class="row">
+        <!-- Columna 1-->
+        <div class="column">
+            <h3 class="color-blanco">Sofá Minimalista</h3>
+            <p class="color-blanco">Sofá minimalista, forrado en tela.<br>Su precio es de $20,000</p>
+            <button class="add-to-cart-button">Agregar al carrito</button>
+        </div> 
+        <!-- Columna 2  ;con boton "agregar al carrito" -->
+        <div class="column">
+            <h3 class="color-blanco">Sillón Individual</h3>
+            <p class="color-blanco">Sillón individual, forrado en tela tipo piel, color gris.<br>Su precio es de $15,000</p>
+            <button class="add-to-cart-button">Agregar al carrito</button>
+        </div>
+        <!-- Columna 3  ;con boton "agregar al carrito" -->
+        <div class="column">
+            <h3 class="color-blanco">Sofá de lujo</h3>
+            <p class="color-blanco">Sofá de lujo, forrado en tela tipo piel, color menta.<br>Su precio es de $20,000</p>
+            <button class="add-to-cart-button">Agregar al carrito</button>
+        </div>
+    </div>
+     <!-- Sección categorías de productos -->
+     <div>
+        <h2 style="text-align:center;">Categorías de productos</h2>
+    </div>
+
+     <!-- se inserta cuarta fila con tres columnas, para las categorias 1, 2 y 3. --> 
+     <div class="row">
+        <!-- Columna 1-->
+        <div class="column">
+            <a href="#categoria1"><img src="categoria1.jpg" alt="Imagen categoria 1"></a>
+        </div>
+        <!-- Columna 2 -->
+        <div class="column">
+            <a href="#categoria2"><img src="categoria2.jpg" alt="Imagen categoría 2"></a>
+        </div>
+         <!-- Columna 3 -->
+         <div class="column">
+            <a href="#categoria3"><img src="categoria3.jpg" alt="Imagen categoría 3"></a>
+        </div>
+    </div>
+    <!-- footer con fila de tres columnas -->
+<footer>
+    <div class="column">
+        <h3>Tipos de muebles</h3>
+        <nav>
+           <ul>
+                <li<a href="#">Cocina</a></li>
+                <li<a href="#">Oficina</a></li>
+                <li<a href="#">Jardin</a></li>
+                <li<a href="#">Cochera</a></li>
+                <li<a href="#">Dormitorios</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="column">
+        <h3>Sobre nosotros</h3>
+        <nav>
+            <ul>
+                <li<a href="#">Nuestra historis</a></li>
+                <li<a href="#">Mision</a></li>
+                <li<a href="#">Visión y valores</a></li>
+                <li<a href="#">Carrera</a></li>
+                <li<a href="#">Póliticas de privacidad</a></li>
+                <li<a href="#">Términos del servicio</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="column">
+        <h3>Soporte</h3>
+        <nav>
+            <ul>
+                <li<a href="#">Preguntas frecuentes</a></li>
+                <li<a href="#">Ayuda en linea</a></li>
+                <li<a href="#">Confianza y seguridad</a></li>
+             </ul>
+        </nav>
+    </div>
+</footer>
+</body>
+</html>
